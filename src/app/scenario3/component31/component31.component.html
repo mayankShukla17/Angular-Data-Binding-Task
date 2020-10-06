@@ -1,0 +1,11 @@
+<div>
+  <h2>Scenario 3</h2>
+  <!-- this is the parent class and the parent data is binded -->
+  <p>Input from Parent Component</p>
+  <!-- input text is created -->
+  <input #nm type="text" placeholder="Enter Text">
+  <!-- button is created with event binded to it  -->
+  <button (click) ="fireEvent(nm.value)"> Submit </button>
+
+  <app-component32 [parentData]="text"></app-component32> 
+</div>

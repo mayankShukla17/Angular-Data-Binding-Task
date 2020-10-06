@@ -1,0 +1,7 @@
+<div>
+    <!-- input text is created -->
+    <p>Input from Child Component</p>
+    <input #name type="text" placeholder="Enter Text">
+    <!-- button is created with event binded to it  -->
+    <button (click) ="fireEvent(name.value)"> Submit </button>
+</div>

@@ -1,0 +1,11 @@
+<div>
+  <h2>Scenario 6</h2>
+  <!-- creating a input text -->
+  <p>Input in Parent Component</p>
+  <input #name type="text" placeholder="Enter Text" >
+  <!-- creating a button  -->
+  <button (click)="onClick(name.value)"> Submit</button>
+  <!-- binding the two sibling components  -->
+  <app-component62 [parentData]="name.value"></app-component62>
+  <app-component63 [parentData]="name.value"></app-component63>
+</div>
